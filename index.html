@@ -16,7 +16,195 @@
     <!-- Extra CSS -->
     <link rel="stylesheet" href="assets/css/theme.css?ver=1930">
 
+    <style>
+        body {
+            font-family: Poppins !important;
+        }
 
+        .header-banner.bg-theme-grad.has-ovm.has-mask {
+            position: inherit;
+        }
+
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+            /*Big smartphones [426px -> 600px]*/
+
+            .nk-df-rel,
+            .has-ovm,
+            .has-bg,
+            [class*='bg-'],
+            .has-bg-image,
+            .has-bg-video {
+                /* position: unset; */
+            }
+
+            /* .banner-wrap {
+                position: relative;
+                top: -200px;
+            } */
+
+            .banner-gfx.banner-gfx-re-s1.animated.fadeInUp {
+                display: none;
+            }
+
+            .header-banner {
+                height: 380px !important;
+            }
+
+            .for_mob {
+                /* display: block !important; */
+            }
+
+            /* h1.title.animated.fadeInUp {
+                font-size: 2.375rem !important;
+                font-weight: 800 !important;
+            } */
+
+            div.banney-text {
+                max-width: 100%;
+                position: absolute;
+                top: 8em;
+            }
+
+            .this-section {
+                flex-direction: column-reverse !important;
+            }
+
+            .centre-btn {
+                text-align: center;
+                margin-bottom: 2em;
+            }
+
+            .btn-tr {
+                width: 50%;
+            }
+
+            .section-tr {
+                margin-top: 2em;
+            }
+
+            .img-res {
+                height: 40em;
+                object-fit: cover;
+            }
+
+            .no-padding {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            /* .sturborn-front {
+                z-index: 999 !important;
+            }
+
+            .sturborn-back {
+                z-index: 0 !important;
+            } */
+
+            #sturborn-banner {
+                min-height: 70vh !important;
+            }
+        }
+
+        @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+            div.banney-text {
+                max-width: 50%;
+                position: absolute;
+                top: 15em;
+            }
+
+            .why-image {
+                /* max-width: none;
+                width: 500px; */
+                height: 500px;
+                object-fit: cover;
+            }
+
+            .img-ui {
+                position: absolute;
+                left: 29em;
+                right: -14em;
+                margin-top: 8em;
+            }
+
+            .mgb-7 {
+                margin-bottom: 7em;
+            }
+        }
+
+        @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+            div.banney-text {
+                max-width: 50%;
+                position: absolute;
+                top: 15em;
+            }
+
+            .why-image {
+                /* max-width: none;
+                width: 500px; */
+                height: 500px;
+                object-fit: cover;
+            }
+
+            .img-ui {
+                position: absolute;
+                left: 29em;
+                right: -14em;
+                margin-top: 8em;
+            }
+
+            .mgb-7 {
+                margin-bottom: 7em;
+            }
+        }
+
+
+
+
+        @media (min-device-width: 800px) and (max-device-width: 1280px) {
+
+            .header-banner {
+                height: 580px !important;
+            }
+
+            div.banney-text {
+                max-width: 100%;
+                position: absolute;
+                top: 10em;
+            }
+
+            .this-section {
+                flex-direction: column-reverse !important;
+            }
+
+            .centre-btn {
+                text-align: center;
+                margin-bottom: 2em;
+            }
+
+            .btn-tr {
+                width: 50%;
+            }
+
+            .section-tr {
+                margin-top: 2em;
+            }
+
+            .img-res {
+                height: 40em;
+                object-fit: cover;
+            }
+
+            img.why-image {
+                max-width: none;
+                height: 500px;
+                width: 631px !important;
+                object-fit: cover;
+            }
+
+
+
+        }
+    </style>
 
 
 </head>
@@ -55,6 +243,8 @@
                                 <ul class="menu">
                                     <li class="menu-item"><a class="menu-link nav-link" href="#header">Home</a></li>
                                     <li class="menu-item"><a class="menu-link nav-link" href="#about">About</a></li>
+                                    <li class="menu-item"><a class="menu-link nav-link" href="#service">Our Services</a>
+                                    </li>
                                     <li class="menu-item"><a class="menu-link nav-link" href="#why">Why Choose Us</a>
                                     </li>
                                     <li class="menu-item"><a class="menu-link nav-link" href="#team">Team</a>
@@ -74,28 +264,29 @@
             <!-- Banner @s -->
             <div class="header-banner bg-theme-grad">
                 <div class="nk-banner">
-                    <div class="banner banner-fs banner-single banner-gap-b2">
+                    <div class="banner banner-fs banner-single banner-gap-b2" id="sturborn-banner">
                         <div class="banner-wrap">
                             <div class="container">
-                                <div class="row align-items-center justify-content-center">
-                                    <div class="col-lg-5 order-lg-last">
-                                        <div class="banner-gfx banner-gfx-re-s1 animated" data-animate="fadeInUp"
-                                            data-delay=".9">
-                                            <img src="images/header/new4.png" alt="header">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-7 col-sm-10 text-center text-lg-left">
-                                        <div class="banner-caption cpn tc-light">
-                                            <div class="cpn-head">
-                                                <h1 class="title animated" data-animate="fadeInUp" data-delay="1"
-                                                    style="font-family: 'poppins';">Your
-                                                    trusted friend xchange partner </h1>
-                                            </div>
+                                <!-- <div class="row"> -->
+                                <div class="banney-text">
+                                    <h1 class="animated" data-animate="fadeInUp" data-delay="1" style="color:white;">
+                                        Your trusted partner <br> for secure currency and <br>crypto xchange
+                                    </h1>
+                                    <p class="animated" data-animate="fadeInUp" data-delay="1"
+                                        style="color: white; font-family: 'poppins';">We
+                                        provide the best, secure Global bitcoin and<br> currency
+                                        exchange service</p>
+                                    <div style="padding-right: 10px;" class="for_mob pdt-m animated fadeInUp"
+                                        data-animate="fadeInUp" data-delay=".3"
+                                        style="visibility: visible; animation-delay: 0.3s;">
+                                        <a target="_blank" href="https://wa.me/message/2LIGGUKXIVCMA1"
+                                            class="btn btn-grad btn-1"
+                                            style="border: 1px solid; box-shadow: 0 4px 8px rgb(0,0,0,0.19); color:black;">Start
+                                            Exchange</a>
 
-                                        </div>
                                     </div>
-                                    <!-- .col -->
-                                </div><!-- .row -->
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -111,12 +302,13 @@
         <main class="nk-pages">
 
             <!-- // -->
-            <section class="section bg-light section-about" id="about">
+            <section class="section section-about" id="about"
+                style="padding-bottom: 0; overflow-y: hidden !important; overflow-x: hidden !important;padding-top:60px;">
 
                 <div class="container">
                     <!-- Block @s -->
                     <div class="nk-block nk-block-about">
-                        <div class="row gutter-vr-30px align-items-center pdb-l">
+                        <div class="row gutter-vr-30px align-items-center">
                             <div class="col-lg-6">
                                 <div class="nk-block-text">
 
@@ -134,17 +326,20 @@
                                         your requests
                                     </p>
 
-                                    <div class="pdt-m animated" data-animate="fadeInUp" data-delay=".3">
-                                        <a href="#contact" class="btn btn-grad">CLICK HERE TO GET STARTED</a>
+                                    <div id="sturborn-btn">
+
+                                        <a target="_blank" href=https://wa.me/+233593502976" style="color: black;"
+                                            class="btn btn-grad">Click Here To Get Started</a>
                                     </div>
                                 </div>
+
                             </div>
                             <div class="col-lg-6">
                                 <div class="nk-block-video animated" data-animate="fadeInUp" data-delay=".5">
-                                    <img src="images/bg1.jpg" alt="video">
-                                    <a href="https://www.youtube.com/watch?v=SSo_EIwHSd4"
+                                    <img src="images/use/woman.png" alt="video">
+                                    <!-- <a href="https://www.youtube.com/watch?v=SSo_EIwHSd4"
                                         class="nk-block-video-play video-popup btn-play btn-play-light"><em
-                                            class="fas fa-play"></em></a>
+                                            class="fas fa-play"></em></a> -->
                                 </div>
                             </div>
                         </div>
@@ -153,22 +348,125 @@
                 </div>
 
             </section>
+
+
             <!-- // -->
-            <section class="section section-features bg-white" id="why">
+
+            <section class="bg-theme bg-pattern-dots" id="service">
+
+                <div class="section section-tokensale tc-light">
+
+                    <div class="container">
+                        <div class="section-head text-center wide-auto" style="padding-bottom: 0;">
+                            <h2 class="title animated fadeInUp" data-animate="fadeInUp" data-delay=".1"
+                                style="visibility: visible; animation-delay: 0.1s;">Our Services</h2>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="section-tokendes has-ovm">
+
+                    <div class="container">
+
+
+                        <div class="nk-block nk-block-features">
+                            <div class="row gutter-vr-40px justify-content-center">
+                                <div class="col-lg-3 col-md-3">
+                                    <div class="feature feature-s8 feature-center card card-full card-md"
+                                        style="padding:0;">
+                                        <div>
+                                            <img src="images/use/b2cc.png" alt="feature">
+                                        </div>
+                                        <div class="feature-text feature-text-s8"
+                                            style="margin-bottom: 3em; margin-left: 1em; margin-right: 1em;">
+                                            <h4 class="title title-sm title-thin" style="font-weight: 500;">
+                                                <span>Bitcoin to Cedis
+                                                    Exchange
+                                                </span>
+                                            </h4>
+                                            <p>Exchange your Bitcoin to Cedis and get your Cedis exchanged to Bitcoin at
+                                                the best rate.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3">
+                                    <div class="feature feature-s8 feature-center card card-full card-md"
+                                        style="padding:0;">
+                                        <div>
+                                            <img src="images/use/btnn.png" alt="feature">
+                                        </div>
+                                        <div class="feature-text feature-text-s8"
+                                            style="margin-bottom: 3em; margin-left: 1em; margin-right: 1em;">
+                                            <h4 class="title title-sm title-thin" style="font-weight: 500;">
+                                                <span>Bitcoin to Naira
+                                                    Exchange
+                                                </span>
+                                            </h4>
+                                            <p>Exchange your Bitcoin to Naira and get your Naira exchanged to Bitcoin at
+                                                the best rate.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3">
+                                    <div class="feature feature-s8 feature-center card card-full card-md"
+                                        style="padding:0;">
+                                        <div>
+                                            <img src="images/use/c2nn.png" alt="feature">
+                                        </div>
+                                        <div class="feature-text feature-text-s8"
+                                            style="margin-bottom: 3em; margin-left: 1em; margin-right: 1em;">
+                                            <h4 class="title title-sm title-thin" style="font-weight: 500;"><span>Cedis
+                                                    to Naira Exchange
+                                                </span></h4>
+                                            <p>Exchange your Cedis to Naira and get your Naira exchanged to Cedis at the
+                                                best rate.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3">
+                                    <div class="feature feature-s8 feature-center card card-full card-md"
+                                        style="padding:0;">
+                                        <div>
+                                            <img src="images/use/gcc.png" alt="feature">
+                                        </div>
+                                        <div class="feature-text feature-text-s8"
+                                            style="margin-bottom: 3em; margin-left: 1em; margin-right: 1em;">
+                                            <h4 class="title title-sm title-thin" style="font-weight: 500;">
+                                                <span>Giftcard Exchange
+                                                </span>
+                                            </h4>
+                                            <p>Exchange your Giftcard at the best rate.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nk-ovm ovm-bottom ovm-h-70 bg-light"></div>
+                </div>
+            </section>
+
+
+
+            <section class="section section-features bg-white" id="why" style="padding: 0; margin: 0;">
 
                 <div class="container">
                     <!-- Block @s -->
                     <div class="nk-block nk-block-features-s2">
-                        <div class="row align-items-center flex-row-reverse">
-                            <div class="col-lg-5">
-                                <div class="gfx py-4 animated" data-animate="fadeInUp" data-delay=".1">
-                                    <img src="images/gfx/gfx-l.png" alt="gfx">
-                                </div>
-                            </div><!-- .col -->
-                            <div class="col-lg-7">
+                        <div class="row align-items-center flex-row-reverse this-section">
+
+                            <div class="col-lg-7 section-tr">
                                 <!-- Section Head @s -->
 
-                                <div class="section-head">
+                                <div class="section-head" style="padding-bottom: 15px;">
                                     <h2 class="title animated" data-animate="fadeInUp" data-delay=".2">Why Choose
                                         Glimswave?</h2>
 
@@ -179,7 +477,8 @@
                                             <em class="icon ikon ikon-shiled-alt"></em>
                                         </div>
                                         <div class="feature-text">
-                                            <h5 class="title title-sm">Speed Delivery</h5>
+                                            <h5 class="title title-sm" style="margin-bottom: 0.3rem !important">Speed
+                                                Delivery</h5>
                                             <p>Glimswave's interface allows our customers to exchange currencies in the
                                                 fastest time possible..</p>
                                         </div>
@@ -189,7 +488,8 @@
                                             <em class="icon ikon ikon-user"></em>
                                         </div>
                                         <div class="feature-text">
-                                            <h5 class="title title-sm">Reliable and Secure Transactions</h5>
+                                            <h5 class="title title-sm" style="margin-bottom: 0.3rem !important">Reliable
+                                                and Secure Transactions</h5>
                                             <p>Our trasactions are dependable and certain to remain safe. We are
                                                 consistently
                                                 caring out quality exchange and are 100% trustworthy</p>
@@ -200,11 +500,22 @@
                                             <em class="icon ikon ikon-data-server"></em>
                                         </div>
                                         <div class="feature-text">
-                                            <h5 class="title title-sm">Support</h5>
+                                            <h5 class="title title-sm" style="margin-bottom: 0.3rem !important">Support
+                                            </h5>
                                             <p>We have a fast response team whom are ready to respond to your enquires
                                                 or complaints no time.</p>
                                         </div>
                                     </div>
+
+                                </div>
+                                <div class="pdt-m animated centre-btn" data-animate="fadeInUp" data-delay=".3">
+                                    <a target="_blank" href="https://wa.me/+233593502976" style="color: black;"
+                                        class="btn btn-grad btn-tr">Start Exchange</a>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-lg-5">
+                                <div class="gfx animated" data-animate="fadeInUp" data-delay=".1" style="padding:0;">
+                                    <img class="why-image" src="images/use/girl.webp" alt="gfx">
                                 </div>
                             </div><!-- .col -->
                         </div><!-- .row -->
@@ -213,20 +524,17 @@
 
             </section>
 
-            <section class="section bg-theme-alt tc-light has-bg-image">
+            <section class="section bg-theme-alt tc-light has-bg-image"
+                style="overflow: hidden !important; padding-bottom: 0; padding-top: 80px;">
                 <div class="container">
 
                     <!-- Block @s -->
 
                     <div class="nk-block nk-block-features-s2">
-                        <div class="row align-items-center justify-content-between gutter-vr-30px">
-                            <div class="col-lg-5">
-                                <div class="gfx gfx-auto py-4">
-                                    <img src="images/gfx/gfx-v.png" alt="gfx">
-                                </div>
-                            </div><!-- .col -->
-                            <div class="col-lg-6">
-                                <div class="section-head">
+                        <div class="row align-items-center justify-content-between gutter-vr-30px this-section">
+
+                            <div class="col-lg-6 mgb-7">
+                                <div class="section-head" style="padding-bottom: 30px;">
                                     <h2 class="title animated fadeInUp" data-animate="fadeInUp" data-delay=".2"
                                         style="visibility: visible; animation-delay: 0.2s;">How We Operate</h2>
 
@@ -267,8 +575,23 @@
                                                 marked as “completed” and money sent immediately.</p>
                                         </div>
                                     </div>
+
+                                </div>
+                                <div class="pdt-m animated centre-btn" data-animate="fadeInUp" data-delay=".3">
+                                    <a href="https://wa.me/message/2LIGGUKXIVCMA1" target="_blank" style="color: black;"
+                                        class="btn btn-grad btn-tr">Start Exchange</a>
                                 </div>
                             </div><!-- .col -->
+                            <!-- <div class=""
+                                style="position: absolute; left: 27em; right:-23em; overflow-y: hidden; overflow-y: hidden;">
+                                <img src="images/use/phoney.png" alt="gfx">
+                            </div> -->
+                            <!-- <div class="col-lg-5"> -->
+                            <div class="img-ui no-padding">
+                                <img class="img-res" src="images/use/phoney.png" alt="gfx">
+                            </div>
+                            <!-- </div> -->
+                            <!-- .col -->
                         </div><!-- .row -->
                     </div><!-- .block @e -->
                 </div>
@@ -287,22 +610,23 @@
                             <div class="col-lg-5 mb-4 mb-lg-0">
                                 <div class="team-featured-photo tc-light animated" data-animate="fadeInUp"
                                     data-delay=".1">
-                                    <img src="images/team/large-a.jpg" alt="team">
-                                    <h5 class="team-featured-info">David Metthew<span>Chairman of X and
-                                            Entrepreneur</span></h5>
+                                    <img src="images/use/team/team 0.jpg" alt="team">
+                                    <!-- <h5 style="color: #EFB92E;" class="team-featured-info">Gideon
+                                        Okonye<span>Founder/CEO</span></h5> -->
                                 </div>
                             </div>
                             <div class="col-lg-7">
                                 <div class="team-featured-cont">
                                     <h6 class="title title-xs title-light animated" data-animate="fadeInUp"
-                                        data-delay=".2">behind the idea</h6>
+                                        data-delay=".2">Gideon Okonye</h6>
                                     <h2 class="title title-lg title-dark animated" data-animate="fadeInUp"
-                                        data-delay=".3">The Founder</h2>
-                                    <p class="animated" data-animate="fadeInUp" data-delay=".4">x Crypto is founded
-                                        by David Metthew who is young entrepreneur &amp; full stack-developer. He is
-                                        totam rem aperiam, et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-                                        enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Quam
-                                        nihil molestiae illum.</p>
+                                        data-delay=".3">The Founder/CEO</h2>
+                                    <p class="animated" data-animate="fadeInUp" data-delay=".4">Glimswave is founded and
+                                        Managed by Gideon Okonye, with over 8 years of unwavering success in the area of
+                                        currency
+                                        exchange and transfers across Africa. He has built a strong and responsive team
+                                        across each relevant touch points to
+                                        ensure safe and secure transaction.</p>
                                 </div>
                             </div>
                         </div><!-- .row -->
@@ -317,7 +641,7 @@
                 <div class="container">
                     <!-- Section Head @s -->
                     <div class="section-head text-center wide-auto">
-                        <h2 class="title title-lg title-dark animated" data-animate="fadeInUp" data-delay=".1">Core Team
+                        <h2 class="title title-lg animated" data-animate="fadeInUp" data-delay=".1">Core Team
                         </h2>
                     </div><!-- .section-head @e -->
                     <!-- Block @s -->
@@ -326,29 +650,30 @@
                             <div class="col-md-3 col-6">
                                 <div class="team animated" data-animate="fadeInUp" data-delay=".2">
                                     <div class="team-photo">
-                                        <img src="images/team/a.jpg" alt="team">
-                                        <a href="#team-popup-1" class="team-show content-popup"></a>
-                                        <ul class="team-social">
+                                        <img src="images/use/team/team 211.jpg" alt="team">
+                                        <!-- <a href="#team-popup-1" class="team-show content-popup"></a> -->
+                                        <!-- <ul class="team-social">
                                             <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
                                             <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                                        </ul>
+                                        </ul> -->
                                     </div>
-                                    <h5 class="team-name title title-sm">Louis Baker</h5>
-                                    <span class="team-position">CEO &amp; Lead Blockchain</span>
+                                    <h5 class="team-name title title-sm">Macdonald Enwereuzo</h5>
+                                    <span class="team-position">Head of Operations, Nigeria</span>
                                 </div>
+
                                 <!-- Start .team-profile  -->
                                 <div id="team-popup-1" class="team-popup mfp-hide">
                                     <a title="Close" class="mfp-close">×</a>
                                     <div class="row align-items-start">
                                         <div class="col-md-6">
                                             <div class="team-photo">
-                                                <img src="images/team/a.jpg" alt="team">
+                                                <img src="images/use/team/team 211.jpg" alt="team">
                                             </div>
                                         </div><!-- .col  -->
                                         <div class="col-md-6">
                                             <div class="team-popup-info pl-md-3">
-                                                <h3 class="team-name title title-lg pt-4">Louis Baker</h3>
-                                                <p class="team-position">CEO &amp; Lead Blockchain </p>
+                                                <h3 class="team-name title title-lg pt-4">Macdonald Enwereuzo</h3>
+                                                <p class="team-position">Head of Operations, Nigeria </p>
                                                 <ul class="team-social mb-4">
                                                     <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
                                                     <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
@@ -384,15 +709,15 @@
                             <div class="col-md-3 col-6">
                                 <div class="team animated" data-animate="fadeInUp" data-delay=".2">
                                     <div class="team-photo">
-                                        <img src="images/team/b.jpg" alt="team">
-                                        <a href="#team-popup-2" class="team-show content-popup"></a>
-                                        <ul class="team-social">
+                                        <img src="images/use/team/team 111.jpg" alt="team">
+                                        <!-- <a href="#team-popup-2" class="team-show content-popup"></a> -->
+                                        <!-- <ul class="team-social">
                                             <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
                                             <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                                        </ul>
+                                        </ul> -->
                                     </div>
-                                    <h5 class="team-name title title-sm">Jonathan Rios</h5>
-                                    <span class="team-position">CTO &amp; Software Engineer</span>
+                                    <h5 class="team-name title title-sm">Riridollarzz Aning Rejoice Akosua</h5>
+                                    <span class="team-position">Chief Marketing Officer</span>
                                 </div>
                                 <!-- Start .team-popup  -->
                                 <div id="team-popup-2" class="team-popup mfp-hide">
@@ -400,13 +725,15 @@
                                     <div class="row align-items-start">
                                         <div class="col-md-6">
                                             <div class="team-photo">
-                                                <img src="images/team/b.jpg" alt="team">
+                                                <img src="images/use/team/team 111.jpg" alt="team">
                                             </div>
                                         </div><!-- .col  -->
                                         <div class="col-md-6">
+
                                             <div class="team-popup-info pl-md-3">
-                                                <h3 class="team-name title title-lg pt-4">Jonathan Rios</h3>
-                                                <p class="team-position">CTO &amp; Software Engineer</p>
+                                                <h3 class="team-name title title-lg pt-4">Riridollarzz Aning Rejoice
+                                                    Akosua</h3>
+                                                <p class="team-position">Chief Marketing Officer</p>
                                                 <ul class="team-social mb-4">
                                                     <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
                                                     <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
@@ -424,15 +751,15 @@
                             <div class="col-md-3 col-6">
                                 <div class="team animated" data-animate="fadeInUp" data-delay=".3">
                                     <div class="team-photo">
-                                        <img src="images/team/c.jpg" alt="team">
-                                        <a href="#team-popup-3" class="team-show content-popup"></a>
-                                        <ul class="team-social">
+                                        <img src="images/use/team/team 31.jpg" alt="team">
+                                        <!-- <a href="#team-popup-3" class="team-show content-popup"></a> -->
+                                        <!-- <ul class="team-social">
                                             <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
                                             <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                                        </ul>
+                                        </ul> -->
                                     </div>
-                                    <h5 class="team-name title title-sm">Jason Morales</h5>
-                                    <span class="team-position">Sr.Backend developer</span>
+                                    <h5 class="team-name title title-sm">Torvinya Freda</h5>
+                                    <span class="team-position">Head of Operations, Ghana</span>
                                 </div>
                                 <!-- Start .team-profile  -->
                                 <div id="team-popup-3" class="team-popup mfp-hide">
@@ -440,13 +767,13 @@
                                     <div class="row align-items-start">
                                         <div class="col-md-6">
                                             <div class="team-photo">
-                                                <img src="images/team/c.jpg" alt="team">
+                                                <img src="images/use/team/team 31.jpg" alt="team">
                                             </div>
                                         </div><!-- .col  -->
                                         <div class="col-md-6">
                                             <div class="team-popup-info pl-md-3">
-                                                <h3 class="team-name title title-lg pt-4">Jason Morales</h3>
-                                                <p class="team-position">Sr.Backend developer</p>
+                                                <h3 class="team-name title title-lg pt-4">Torvinya Freda</h3>
+                                                <p class="team-position">Head of Operations, Ghana</p>
                                                 <ul class="team-social mb-4">
                                                     <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
                                                     <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
@@ -464,15 +791,15 @@
                             <div class="col-md-3 col-6">
                                 <div class="team animated" data-animate="fadeInUp" data-delay=".4">
                                     <div class="team-photo">
-                                        <img src="images/team/d.jpg" alt="team">
-                                        <a href="#team-popup-4" class="team-show content-popup"></a>
-                                        <ul class="team-social">
+                                        <img src="images/use/team/team 4.jpg" alt="team">
+                                        <!-- <a href="#team-popup-4" class="team-show content-popup"></a> -->
+                                        <!-- <ul class="team-social">
                                             <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
                                             <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                                        </ul>
+                                        </ul> -->
                                     </div>
-                                    <h5 class="team-name title title-sm">Joseph Jordan</h5>
-                                    <span class="team-position">Software Engineer</span>
+                                    <h5 class="team-name title title-sm">Kachi Eze</h5>
+                                    <span class="team-position">Brand Manager and IT consultant</span>
                                 </div>
                                 <!-- Start .team-profile  -->
                                 <div id="team-popup-4" class="team-popup mfp-hide">
@@ -480,13 +807,13 @@
                                     <div class="row align-items-start">
                                         <div class="col-md-6">
                                             <div class="team-photo">
-                                                <img src="images/team/d.jpg" alt="team">
+                                                <img src="images/use/team 4.jpg" alt="team">
                                             </div>
                                         </div><!-- .col  -->
                                         <div class="col-md-6">
                                             <div class="team-popup-info pl-md-3">
-                                                <h3 class="team-name title title-lg pt-4">Joseph Jordan</h3>
-                                                <p class="team-position">Software Engineer</p>
+                                                <h3 class="team-name title title-lg pt-4">Kachi Eze</h3>
+                                                <p class="team-position">Brand Manager and IT consultant</p>
                                                 <ul class="team-social mb-4">
                                                     <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
                                                     <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
@@ -507,7 +834,92 @@
                     <!-- Block @r -->
                 </div>
             </section>
-            <!-- // -->
+
+            <section class="section bg-light" style="padding: 0;">
+                <div class="container">
+                    <div class="section-head text-center animated fadeInUp" data-animate="fadeInUp" data-delay=".1"
+                        style="visibility: visible; animation-delay: 0.1s;">
+                        <h2 class="title">What Our Customers Say</h2>
+                        <!-- <p class="lead lead-regular lead-s2">See what our customer say about us</p> -->
+                    </div>
+                    <div class="nk-block nk-block-testimonial">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-carousel has-carousel owl-carousel animated fadeInUp owl-loaded owl-drag"
+                                    data-animate="fadeInUp" data-delay=".2" data-items="1" data-navs="true"
+                                    data-loop="true" style="visibility: visible; animation-delay: 0.2s;">
+
+
+                                    <div class="owl-stage-outer">
+                                        <div class="owl-stage"
+                                            style="transform: translate3d(-2280px, 0px, 0px); transition: all 0s ease 0s; width: 4560px;">
+                                            <div class="owl-item cloned" style="width: 730px; margin-right: 30px;">
+                                                <div class="testimonial card">
+
+                                                    <div class="tesm-content">
+                                                        <p>I never really liked using the bank to exchange money, so I
+                                                            was really excited when I heard about this new company that
+                                                            let's you trade currency for bitcoins. It's so easy and
+                                                            fast. They are like my trusted partner for efficient, secure
+                                                            and
+                                                            fast transactions.</p>
+                                                        <h4 class="title title-sm">Jeffrey
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item cloned" style="width: 730px; margin-right: 30px;">
+                                                <div class="testimonial card">
+
+                                                    <div class="tesm-content">
+                                                        <p>I'm so glad I found a company that could help me exchange my
+                                                            bitcoins into naira or cedis. It's not easy to find a
+                                                            company that you can trust these days.</p>
+                                                        <h4 class="title title-sm">Toochukwu
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item" style="width: 730px; margin-right: 30px;">
+                                                <div class="testimonial card">
+
+                                                    <div class="tesm-content">
+                                                        <p>I'm a big fan of Bitcoin. I've been using it for years, and I
+                                                            love how fast Glimswave has made it easy to send money to
+                                                            anyone, anywhere in the world.</p>
+                                                        <h4 class="title title-sm">Kwase
+                                                        </h4>
+                                                        <!-- <h4 class="title title-sm">Jenny Upon <span>Ceo, Jaxy OX</span>
+                                                        </h4> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item active" style="width: 730px; margin-right: 30px;">
+                                                <div class="testimonial card">
+
+                                                    <div class="tesm-content">
+                                                        <p>I love Glimswave. They're always so helpful. I never need to
+                                                            wait so long for them to deliver. And they have the best
+                                                            customer service</p>
+                                                        <h4 class="title title-sm">David
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="owl-nav"><button type="button" role="presentation"
+                                            class="owl-prev"></button><button type="button" role="presentation"
+                                            class="owl-next"></button></div>
+                                    <div class="owl-dots"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section class="section section-faq bg-white" id="faq">
 
                 <div class="container">
@@ -522,116 +934,27 @@
                     <div class="nk-block block-faq">
                         <div class="row">
                             <div class="col-md-4 col-lg-3 mb-4 mb-lg-0">
-                                <ul class="nav tab-nav tab-nav-vr tab-nav-bdr mr-lg-3 animated" data-animate="fadeInUp"
-                                    data-delay=".3">
-                                    <li><a class="active" data-toggle="tab" href="#general-questions"><em
-                                                class="fas fa-caret-right"></em>Group 1</a></li>
-                                    <li><a data-toggle="tab" href="#ico-questions"><em
-                                                class="fas fa-caret-right"></em>Group 2</a></li>
-                                    <li><a data-toggle="tab" href="#tokens-sales"><em
-                                                class="fas fa-caret-right"></em>Group 3</a></li>
-                                    <li><a data-toggle="tab" href="#clients-releted"><em
-                                                class="fas fa-caret-right"></em>Group 4</a></li>
+                                <ul class="nav tab-nav tab-nav-vr tab-nav-bdr mr-lg-3">
+                                    <li><a class="active" data-toggle="tab" href="#general-questions-01"><em
+                                                class="fas fa-caret-right"></em>General</a></li>
+                                    <li><a data-toggle="tab" href="#ico-questions-01"><em
+                                                class="fas fa-caret-right"></em>General 2</a></li>
+                                    <li><a data-toggle="tab" href="#tokens-sales-01"><em
+                                                class="fas fa-caret-right"></em>Ghana related</a></li>
+                                    <li><a data-toggle="tab" href="#clients-releted-01"><em
+                                                class="fas fa-caret-right"></em>Nigeria Releted</a>
+                                    </li>
                                 </ul>
-                            </div>
-
+                            </div><!-- .col -->
                             <div class="col-md-8 col-lg-9">
                                 <div class="tab-content">
-                                    <div class="tab-pane fade show active" id="general-questions">
+                                    <div class="tab-pane fade show active" id="general-questions-01">
                                         <div class="accordion accordion-faq" id="faq-1">
-                                            <div class="accordion-item animated" data-animate="fadeInUp"
-                                                data-delay=".1">
+                                            <div class="accordion-item current">
                                                 <h5 class="accordion-title accordion-title-sm" data-toggle="collapse"
-                                                    data-target="#faq-1-1">What is Bitcoin? <span
-                                                        class="accordion-icon"></span></h5>
+                                                    data-target="#faq-1-1">
+                                                    What is cryptocurrency? <span class="accordion-icon"></span></h5>
                                                 <div id="faq-1-1" class="collapse show" data-parent="#faq-1">
-                                                    <div class="accordion-content">
-                                                        <p>
-                                                            Bitcoin is a decentralized digital currency, it is not
-                                                            backed by any single country or bank and is usable anywhere
-                                                            in
-                                                            the world by anyone with a computer or smartphone and access
-                                                            to the Internet.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item animated" data-animate="fadeInUp"
-                                                data-delay=".2">
-                                                <h5 class="accordion-title accordion-title-sm collapsed"
-                                                    data-toggle="collapse" data-target="#faq-1-2">Is forex trading legal
-                                                    in Nigeria? <span class="accordion-icon"></span></h5>
-                                                <div id="faq-1-2" class="collapse" data-parent="#faq-1">
-                                                    <div class="accordion-content">
-                                                        <p>
-                                                            Forex trading - and all forms of trading for that matter, is
-                                                            legal in Nigeria. You do, however, need to ensure that you
-                                                            use a regulated brokerage firm.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item animated" data-animate="fadeInUp"
-                                                data-delay=".3">
-                                                <h5 class="accordion-title accordion-title-sm collapsed"
-                                                    data-toggle="collapse" data-target="#faq-1-3">Can you trade
-                                                    cryptocurrencies in Nigeria? <span class="accordion-icon"></span>
-                                                </h5>
-                                                <div id="faq-1-3" class="collapse" data-parent="#faq-1">
-                                                    <div class="accordion-content">
-                                                        <p>
-                                                            Yes - due to the volatility of the Nigerian naira - many
-                                                            traders are now turning to cryptocurrencies like Bitcoin.
-                                                            All
-                                                            you need is a trusted online crypto broker like Glimswave.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item animated" data-animate="fadeInUp"
-                                                data-delay=".4">
-                                                <h5 class="accordion-title accordion-title-sm collapsed"
-                                                    data-toggle="collapse" data-target="#faq-1-4">What payment methods
-                                                    do the best brokers in Nigeria accept? <span
-                                                        class="accordion-icon"></span></h5>
-                                                <div id="faq-1-4" class="collapse" data-parent="#faq-1">
-                                                    <div class="accordion-content">
-                                                        <p>
-                                                            In reviewing the best trading platforms in Nigeria - we
-                                                            found that you can usually deposit funds with a debit/credit
-                                                            card or bank wire. Many brokers also support e-wallets like
-                                                            Paypal.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="ico-questions">
-                                        <div class="accordion accordion-faq" id="faq-2">
-                                            <div class="accordion-item animated" data-animate="fadeInUp"
-                                                data-delay=".1">
-                                                <h5 class="accordion-title accordion-title-sm" data-toggle="collapse"
-                                                    data-target="#faq-2-1">How do you trade the Nigerian naira?<span
-                                                        class="accordion-icon"></span></h5>
-                                                <div id="faq-2-1" class="collapse show" data-parent="#faq-2">
-                                                    <div class="accordion-content">
-                                                        <div class="accordion-content">
-                                                            <p>
-                                                                Very few active brokers offer a market on the Nigerian
-                                                                naira - as this currency is super volatile and suffers
-                                                                from low
-                                                                levels of liquidity.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item animated" data-animate="fadeInUp"
-                                                data-delay=".2">
-                                                <h5 class="accordion-title accordion-title-sm collapsed"
-                                                    data-toggle="collapse" data-target="#faq-2-2">What is
-                                                    cryptocurrency?<span class="accordion-icon"></span></h5>
-                                                <div id="faq-2-2" class="collapse" data-parent="#faq-2">
                                                     <div class="accordion-content">
                                                         <p>
                                                             Cryptocurrency is basically a digital form of currency with
@@ -639,6 +962,7 @@
                                                             transactions. The underlying technology which runs
                                                             cryptocurrencies is blockchain, and it offers a ledger for
                                                             documenting all transactions.
+
                                                             As of now, you can find multiple cryptocurrencies in
                                                             circulation, such as Bitcoin, Ether, and many new
                                                             cryptocurrencies.
@@ -657,18 +981,37 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="accordion-item animated" data-animate="fadeInUp"
-                                                data-delay=".3">
+                                            <div class="accordion-item">
                                                 <h5 class="accordion-title accordion-title-sm collapsed"
-                                                    data-toggle="collapse" data-target="#faq-2-3">What is
-                                                    blockchain?<span class="accordion-icon"></span></h5>
-                                                <div id="faq-2-3" class="collapse" data-parent="#faq-2">
+                                                    data-toggle="collapse" data-target="#faq-1-2">What is bitcoin?
+                                                    <span class="accordion-icon"></span>
+                                                </h5>
+                                                <div id="faq-1-2" class="collapse" data-parent="#faq-1">
+                                                    <div class="accordion-content">
+                                                        <p>
+                                                            Bitcoin is a decentralized digital currency, it is not
+                                                            backed by any single country or bank and is usable anywhere
+                                                            in
+                                                            the world by anyone with a computer or smartphone and access
+                                                            to the Internet.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h5 class="accordion-title accordion-title-sm collapsed"
+                                                    data-toggle="collapse" data-target="#faq-1-3">What is blockchain?
+                                                    <span class="accordion-icon"></span>
+                                                </h5>
+                                                <div id="faq-1-3" class="collapse" data-parent="#faq-1">
                                                     <div class="accordion-content">
                                                         <p>
                                                             The first-ever cryptocurrency, Bitcoin, is the first
                                                             successful implementation of blockchain in the real world.
                                                             Blockchain technology is basically a transparent, publicly
                                                             accessible, trustless, and secure ledger.
+
                                                             It helps in secure transfer of the ownership of units of
                                                             value by leveraging proof of work consensus and public-key
                                                             encryption methods. Blockchain leverages decentralized
@@ -682,75 +1025,16 @@
                                                             security on blockchain. Interestingly, the capabilities of
                                                             blockchain technology don’t focus on Bitcoin only and also
                                                             extend to financial services, healthcare, and gaming.
-
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="accordion-item animated" data-animate="fadeInUp"
-                                                data-delay=".4">
+                                            <div class="accordion-item">
                                                 <h5 class="accordion-title accordion-title-sm collapsed"
-                                                    data-toggle="collapse" data-target="#faq-2-4">What are public and
-                                                    private keys?<span class="accordion-icon"></span>
-                                                </h5>
-                                                <div id="faq-2-4" class="collapse" data-parent="#faq-2">
-                                                    <div class="accordion-content">
-                                                        <p>
-                                                            The primary foundation of Bitcoin and other notable
-                                                            cryptocurrencies is public-key cryptography. According to
-                                                            the
-                                                            cryptographic system, two different types of keys, such as
-                                                            public key and private key in pairs, can support crypto
-                                                            transactions. The public keys are important for
-                                                            identification and should be publicly visible. On the other
-                                                            hand, the
-                                                            private keys help in authentication and encryption, thereby
-                                                            implying that they are secret in nature.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="tokens-sales">
-                                        <div class="accordion accordion-faq" id="faq-3">
-                                            <div class="accordion-item animated" data-animate="fadeInUp"
-                                                data-delay=".1">
-                                                <h5 class="accordion-title accordion-title-sm" data-toggle="collapse"
-                                                    data-target="#faq-3-1">How do cryptocurrencies work?<span
+                                                    data-toggle="collapse" data-target="#faq-1-4">What are the reasons
+                                                    for the popularity of cryptocurrencies? <span
                                                         class="accordion-icon"></span></h5>
-                                                <div id="faq-3-1" class="collapse show" data-parent="#faq-3">
-                                                    <div class="accordion-content">
-                                                        <p>
-                                                            Popular cryptocurrencies such as Ethereum and Bitcoin work
-                                                            by using three basic pieces of information. The first
-                                                            important aspect in the working of cryptocurrencies is the
-                                                            address related to a specific account. The second important
-                                                            piece of information is the balance you would use for
-                                                            sending and receiving funds.
-
-                                                            Another significant aspect for the working of
-                                                            cryptocurrencies would refer to the public and private keys
-                                                            associated
-                                                            with a specific address. You can generate a private key by
-                                                            generating a Bitcoin address which would also help in
-                                                            identifying the corresponding public key. Subsequently, you
-                                                            can use the address as a representative of the public key
-                                                            for different transactions. On the other hand, the private
-                                                            key offers control over ownership of the funds in a specific
-                                                            address.
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item animated" data-animate="fadeInUp"
-                                                data-delay=".2">
-                                                <h5 class="accordion-title accordion-title-sm collapsed"
-                                                    data-toggle="collapse" data-target="#faq-3-2">What are the reasons
-                                                    for the popularity of cryptocurrencies?<span
-                                                        class="accordion-icon"></span></h5>
-                                                <div id="faq-3-2" class="collapse" data-parent="#faq-3">
+                                                <div id="faq-1-4" class="collapse" data-parent="#faq-1">
                                                     <div class="accordion-content">
                                                         <p>
                                                             Interestingly, you can find various reasons for the
@@ -772,53 +1056,53 @@
                                                             the rising value of cryptocurrencies also encourages people
                                                             to
                                                             turn towards cryptocurrencies in large numbers.
-
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="accordion-item animated" data-animate="fadeInUp"
-                                                data-delay=".3">
+                                            <div class="accordion-item">
                                                 <h5 class="accordion-title accordion-title-sm collapsed"
-                                                    data-toggle="collapse" data-target="#faq-3-3">Who controls
-                                                    cryptocurrencies?<span class="accordion-icon"></span>
-                                                </h5>
-                                                <div id="faq-3-3" class="collapse" data-parent="#faq-3">
+                                                    data-toggle="collapse" data-target="#faq-1-5">How do
+                                                    cryptocurrencies work? <span class="accordion-icon"></span></h5>
+                                                <div id="faq-1-5" class="collapse" data-parent="#faq-1">
                                                     <div class="accordion-content">
                                                         <p>
-                                                            Blockchain does not allocate control to a single entity in
-                                                            the case of cryptocurrencies. However, the creators or
-                                                            developers of cryptocurrencies can set specific parameters
-                                                            such as rules for purchasing or selling cryptocurrency.
+                                                            Popular cryptocurrencies such as Ethereum and Bitcoin work
+                                                            by using three basic pieces of information. The first
+                                                            important aspect in the working of cryptocurrencies is the
+                                                            address related to a specific account. The second important
+                                                            piece of information is the balance you would use for
+                                                            sending and receiving funds.
 
-                                                            On the other hand, users get the privilege of controlling or
-                                                            managing the day-to-day operations of cryptocurrencies in a
-                                                            distributed manner. In addition, the identity of owners is
-                                                            anonymous, and you could not find any solid regulatory
-                                                            framework for verifying ownership of cryptocurrencies.
-
-                                                            However, some countries are investing efforts in introducing
-                                                            some regulations in this area for countering illegal
-                                                            activities. The legal framework for cryptocurrencies could
-                                                            help governments in fighting off the concerns of terrorism
-                                                            financing and money laundering with cryptocurrencies.
-                                                            Furthermore, regulations could also strengthen control of
-                                                            governments over monetary policies with respect to
-                                                            cryptocurrencies.
-
+                                                            Another significant aspect for the working of
+                                                            cryptocurrencies would refer to the public and private keys
+                                                            associated
+                                                            with a specific address. You can generate a private key by
+                                                            generating a Bitcoin address which would also help in
+                                                            identifying the corresponding public key. Subsequently, you
+                                                            can use the address as a representative of the public key
+                                                            for different transactions. On the other hand, the private
+                                                            key offers control over ownership of the funds in a specific
+                                                            address.
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="accordion-item animated" data-animate="fadeInUp"
-                                                data-delay=".4">
-                                                <h5 class="accordion-title accordion-title-sm collapsed"
-                                                    data-toggle="collapse" data-target="#faq-3-4">Is it reasonable to
-                                                    invest in cryptocurrencies?<span class="accordion-icon"></span></h5>
-                                                <div id="faq-3-4" class="collapse" data-parent="#faq-3">
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="ico-questions-01">
+                                        <div class="accordion accordion-faq" id="faq-2">
+                                            <div class="accordion-item current">
+                                                <h5 class="accordion-title accordion-title-sm" data-toggle="collapse"
+                                                    data-target="#faq-2-1">
+                                                    Is it reasonable to invest in cryptocurrencies?<span
+                                                        class="accordion-icon"></span></h5>
+                                                <div id="faq-2-1" class="collapse show" data-parent="#faq-2">
                                                     <div class="accordion-content">
-                                                        <p>
-                                                            If you want to find whether cryptocurrencies are a good
+                                                        <p>If you want to find whether cryptocurrencies are a good
                                                             investment, then you should definitely know that they are
                                                             volatile. Cryptocurrencies do not generate any cash flow
                                                             like real currencies and are not stable. A currency should
@@ -833,24 +1117,17 @@
                                                             Bitcoin has been successful in attaining record high levels.
                                                             With price volatility as the main concern, it is quick to
                                                             arrive at a conclusion about investments in cryptocurrency.
-
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="clients-releted">
-                                        <div class="accordion accordion-faq" id="faq-4">
-                                            <div class="accordion-item animated" data-animate="fadeInUp"
-                                                data-delay=".1">
-                                                <h5 class="accordion-title accordion-title-sm" data-toggle="collapse"
-                                                    data-target="#faq-4-1">How can I buy cryptocurrencies?<span
-                                                        class="accordion-icon"></span></h5>
-                                                <div id="faq-4-1" class="collapse show" data-parent="#faq-4">
+                                            <div class="accordion-item">
+                                                <h5 class="accordion-title accordion-title-sm collapsed"
+                                                    data-toggle="collapse" data-target="#faq-2-2">How can I buy
+                                                    cryptocurrencies?<span class="accordion-icon"></span></h5>
+                                                <div id="faq-2-2" class="collapse" data-parent="#faq-2">
                                                     <div class="accordion-content">
-                                                        <p>
-                                                            Interestingly, you could purchase some cryptocurrencies such
+                                                        <p>Interestingly, you could purchase some cryptocurrencies such
                                                             as Bitcoin directly with fiat currency like US dollars. On
                                                             the other hand, you might also find some cryptocurrencies
                                                             which you have to purchase with Bitcoins or other
@@ -864,19 +1141,15 @@
                                                             such as Ethereum or Bitcoin. One of the popular examples of
                                                             platforms to buy and sell cryptocurrency is Glimswave. The
                                                             renowned cryptocurrency trading exchange helps you create a
-                                                            wallet and conduct cryptocurrency transactions easily.
-
-                                                        </p>
+                                                            wallet and conduct cryptocurrency transactions easily.</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="accordion-item animated" data-animate="fadeInUp"
-                                                data-delay=".2">
+                                            <div class="accordion-item">
                                                 <h5 class="accordion-title accordion-title-sm collapsed"
-                                                    data-toggle="collapse" data-target="#faq-4-2">What are
-                                                    cryptocurrency wallets?<span class="accordion-icon"></span>
-                                                </h5>
-                                                <div id="faq-4-2" class="collapse" data-parent="#faq-4">
+                                                    data-toggle="collapse" data-target="#faq-2-3">What are
+                                                    cryptocurrency wallets?<span class="accordion-icon"></span></h5>
+                                                <div id="faq-2-3" class="collapse" data-parent="#faq-2">
                                                     <div class="accordion-content">
                                                         <p>
                                                             The crypto wallets are basically platforms for secure
@@ -901,21 +1174,249 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="accordion-item">
+                                                <h5 class="accordion-title accordion-title-sm collapsed"
+                                                    data-toggle="collapse" data-target="#faq-2-4">What are public and
+                                                    private keys?<span class="accordion-icon"></span>
+                                                </h5>
+                                                <div id="faq-2-4" class="collapse" data-parent="#faq-2">
+                                                    <div class="accordion-content">
+                                                        <p>
 
+                                                            The primary foundation of Bitcoin and other notable
+                                                            cryptocurrencies is public-key cryptography. According to
+                                                            the
+                                                            cryptographic system, two different types of keys, such as
+                                                            public key and private key in pairs, can support crypto
+                                                            transactions. The public keys are important for
+                                                            identification and should be publicly visible. On the other
+                                                            hand, the
+                                                            private keys help in authentication and encryption, thereby
+                                                            implying that they are secret in nature.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h5 class="accordion-title accordion-title-sm collapsed"
+                                                    data-toggle="collapse" data-target="#faq-2-5">Who controls
+                                                    cryptocurrencies? <span class="accordion-icon"></span></h5>
+                                                <div id="faq-2-5" class="collapse" data-parent="#faq-2">
+                                                    <div class="accordion-content">
+                                                        <p>
+
+                                                            Blockchain does not allocate control to a single entity in
+                                                            the case of cryptocurrencies. However, the
+                                                            creators or
+                                                            developers of cryptocurrencies can set specific parameters
+                                                            such as rules for purchasing or selling
+                                                            cryptocurrency.
+
+                                                            On the other hand, users get the privilege of controlling or
+                                                            managing the day-to-day operations of
+                                                            cryptocurrencies in a
+                                                            distributed manner. In addition, the identity of owners is
+                                                            anonymous, and you could not find any solid
+                                                            regulatory
+                                                            framework for verifying ownership of cryptocurrencies.
+
+                                                            However, some countries are investing efforts in introducing
+                                                            some regulations in this area for
+                                                            countering illegal
+                                                            activities. The legal framework for cryptocurrencies could
+                                                            help governments in fighting off the concerns
+                                                            of terrorism
+                                                            financing and money laundering with cryptocurrencies.
+                                                            Furthermore, regulations could also strengthen
+                                                            control of
+                                                            governments over monetary policies with respect to
+                                                            cryptocurrencies.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tokens-sales-01">
+                                        <div class="accordion accordion-faq" id="faq-3">
+                                            <div class="accordion-item current">
+                                                <h5 class="accordion-title accordion-title-sm" data-toggle="collapse"
+                                                    data-target="#faq-3-1">
+                                                    Is It Safe to Buy Crypto in Ghana?<span
+                                                        class="accordion-icon"></span></h5>
+                                                <div id="faq-3-1" class="collapse show" data-parent="#faq-3">
+                                                    <div class="accordion-content">
+                                                        <p>
+                                                            Buying cyptocurrency in Ghana is a great way to start
+                                                            generating revenue, but it can also be risky. You don't want
+                                                            to
+                                                            invest money that you don't have. There are many reasons why
+                                                            you might want to avoid investing in crypto as a Ghanaian
+                                                            trader. The first is because crypto investing can be high
+                                                            risk as cryptocurrency markets are very volatile. Volatile
+                                                            cryptocurrency markets are suited to more experienced
+                                                            Ghanaian investors, who understand crypto risk management.
+                                                            Although a crypto asset with higher volume and a better
+                                                            reputation increases the chances of legitimacy, this doesn't
+                                                            guarantee cryptocurrency trading success. There are also a
+                                                            lot of cryptocurrency scams out there, which makes this an
+                                                            especially dangerous option.
+
+                                                            You should always do your homework before investing in
+                                                            cryptocurrency from Ghana. Before you invest, read the
+                                                            crypto
+                                                            project's white paper and find out who the founders are.
+                                                            It's best to stick with established coins that are
+                                                            well-known
+                                                            in the Ghana market. While it's possible to buy new coins,
+                                                            it's best to stick to popular, established ones. A few
+                                                            crypto
+                                                            projects in Ghana may have a small group of investors that
+                                                            artificially inflate the price.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h5 class="accordion-title accordion-title-sm collapsed"
+                                                    data-toggle="collapse" data-target="#faq-3-2">How can I buy Bitcoin
+                                                    legally in Ghana?<span class="accordion-icon"></span>
+                                                </h5>
+                                                <div id="faq-3-2" class="collapse" data-parent="#faq-3">
+                                                    <div class="accordion-content">
+                                                        <p>
+                                                            Bitcoin is legal, as such, you can just go ahead and buy
+                                                            Bitcoin with Ghanaian cedi on both mobile and desktop.
+
+                                                            Bitcoin in Ghana is a very new phenomenon, and it’s still in
+                                                            its very early stages.
+
+                                                            However, you can purchase Bitcoin available from a
+                                                            well-recognized cryptocurrency exchange</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h5 class="accordion-title accordion-title-sm collapsed"
+                                                    data-toggle="collapse" data-target="#faq-3-3">Can I convert Bitcoin
+                                                    to cash in Ghana?<span class="accordion-icon"></span>
+                                                </h5>
+                                                <div id="faq-3-3" class="collapse" data-parent="#faq-3">
+                                                    <div class="accordion-content">
+                                                        <p>
+                                                            Yes, you can convert Bitcoin to cash in Ghana.
+
+                                                            There are many different Bitcoin exchanges that can be used
+                                                            to convert Bitcoin to cash in Ghana, and the best of them is
+                                                            Glimswave.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h5 class="accordion-title accordion-title-sm collapsed"
+                                                    data-toggle="collapse" data-target="#faq-3-4">Is trading in
+                                                    cryptocurrency legal in Ghana?<span class="accordion-icon"></span>
+                                                </h5>
+                                                <div id="faq-3-4" class="collapse" data-parent="#faq-3">
+                                                    <div class="accordion-content">
+                                                        <p>
+                                                            Trading in cryptocurrency is legal in Ghana, but Ghanaian or
+                                                            other African regulatory boards have not issued or approved
+                                                            any cryptocurrency exchange platform
+
+                                                            It’s important to understand that cryptocurrencies are not
+                                                            issued or guaranteed by any government, central bank, or
+                                                            other legal authority.
+
+                                                            This means that the value of crypto is only determined by
+                                                            the market.
+
+                                                            When trading, it’s always best to get a feel for what others
+                                                            think about a certain coin in order to give you an idea of
+                                                            how much it’s worth when exchanging for another type.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="clients-releted-01">
+                                        <div class="accordion accordion-faq" id="faq-4">
+                                            <div class="accordion-item current">
+                                                <h5 class="accordion-title accordion-title-sm" data-toggle="collapse"
+                                                    data-target="#faq-4-1">Is forex trading legal in Nigeria?<span
+                                                        class="accordion-icon"></span>
+                                                </h5>
+                                                <div id="faq-4-1" class="collapse show" data-parent="#faq-4">
+                                                    <div class="accordion-content">
+                                                        <p>
+                                                            Forex trading - and all forms of trading for that matter, is
+                                                            legal in Nigeria. You do, however, need to ensure that you
+                                                            use a regulated brokerage firm.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h5 class="accordion-title accordion-title-sm collapsed"
+                                                    data-toggle="collapse" data-target="#faq-4-2">Can you trade
+                                                    cryptocurrencies in Nigeria?<span class="accordion-icon"></span>
+                                                </h5>
+                                                <div id="faq-4-2" class="collapse" data-parent="#faq-4">
+                                                    <div class="accordion-content">
+                                                        <p>
+                                                            Yes - due to the volatility of the Nigerian naira - many
+                                                            traders are now turning to cryptocurrencies like Bitcoin.
+                                                            All
+                                                            you need is a trusted online crypto broker like Glimswave.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h5 class="accordion-title accordion-title-sm collapsed"
+                                                    data-toggle="collapse" data-target="#faq-4-3">What payment methods
+                                                    do the best brokers in Nigeria accept?<span
+                                                        class="accordion-icon"></span></h5>
+                                                <div id="faq-4-3" class="collapse" data-parent="#faq-4">
+                                                    <div class="accordion-content">
+                                                        <p>
+                                                            In reviewing the best trading platforms in Nigeria - we
+                                                            found that you can usually deposit funds with a debit/credit
+                                                            card or bank wire. Many brokers also support e-wallets like
+                                                            Paypal.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h5 class="accordion-title accordion-title-sm collapsed"
+                                                    data-toggle="collapse" data-target="#faq-4-4">How do you trade the
+                                                    Nigerian naira?<span class="accordion-icon"></span></h5>
+                                                <div id="faq-4-4" class="collapse" data-parent="#faq-4">
+                                                    <div class="accordion-content">
+                                                        <p>
+                                                            Very few active brokers offer a market on the Nigerian naira
+                                                            - as this currency is super volatile and suffers from low
+                                                            levels of liquidity.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div><!-- .col -->
-                        </div><!-- .row -->
+                        </div>
                     </div><!-- .block @e -->
                 </div>
 
             </section>
             <!-- // -->
-            <section class="section section-m section-partners bg-light" id="partners">
+            <!-- <section class="section section-m section-partners bg-light" id="partners">
 
                 <div class="container">
-                    <!-- Block @s -->
                     <div class="nk-block block-partners">
                         <h6 class="title title-xs tc-primary text-center animated" data-animate="fadeInUp"
                             data-delay=".1">Our Partners</h6>
@@ -936,10 +1437,9 @@
                                     src="images/partners/g.png" alt="partner"></li>
                         </ul>
                     </div>
-                    <!-- Block @e -->
                 </div>
 
-            </section>
+            </section> -->
         </main>
         <section class="section no-pdy section-contact bg-transparent" id="contact">
 
@@ -983,38 +1483,42 @@
                                         <li>
                                             <em class="contact-icon fas fa-building"></em>
                                             <div class="contact-text">
-                                                <h6> Crypto</h6>
-                                                <span>728 Dooley Branch <br> Beckershire, LA 63598</span>
+                                                <!-- <h6> Crypto</h6> -->
+                                                <span>324 Glims Avenue, Behind Prudential Bank, zongo junction, <br>
+                                                    madina, Accra, Ghana.</span>
                                             </div>
                                         </li>
                                         <li>
                                             <em class="contact-icon fas fa-phone"></em>
                                             <div class="contact-text">
-                                                <span>+44 0123 4567</span>
+                                                <span>+233 (0) 593502976</span>
                                             </div>
                                         </li>
                                         <li>
                                             <em class="contact-icon fas fa-envelope"></em>
                                             <div class="contact-text">
-                                                <span>info@company.com</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <em class="contact-icon fas fa-paper-plane"></em>
-                                            <div class="contact-text">
-                                                <span>Join us on Telegram</span>
+                                                <span><a
+                                                        href="mailto:glimswave@gmail.com">glimswave@gmail.com</a></span>
                                             </div>
                                         </li>
                                     </ul>
                                     <div class="contact-social">
                                         <h6>Be a part of our community</h6>
                                         <ul class="social-links">
-                                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                                            <li><a href="#"><em class="fab fa-medium-m"></em></a></li>
-                                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                                            <li><a href="#"><em class="fab fa-youtube"></em></a></li>
-                                            <li><a href="#"><em class="fab fa-bitcoin"></em></a></li>
-                                            <li><a href="#"><em class="fab fa-github"></em></a></li>
+                                            <!-- <li><a href="#"><em class="fab fa-twitter"></em></a></li> -->
+                                            <li><a target="_blank"
+                                                    href="https://instagram.com/glimswave?igshid=YmMyMTA2M2Y="><em
+                                                        class="fab fa-instagram"></em></a></li>
+                                            <li><a target="_blank" href="https://www.facebook.com/glimswave/"><em
+                                                        class="fab fa-facebook-f"></em></a></li>
+                                            <li><a target="_blank"
+                                                    href="https://twitter.com/glimswave?s=21&t=HL-Hm08YqNo7dGpsS2tsAg"><em
+                                                        class="fab fa-twitter"></em></a></li>
+                                            <li><a target="_blank" href="https://vm.tiktok.com/ZML3UEVs2/"><em
+                                                        class="fab fa-tiktok"></em></a></li>
+                                            <li><a target="_blank" href="https://wa.me/message/2LIGGUKXIVCMA1"><em
+                                                        class="fab fa-whatsapp"></em></a></li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -1211,6 +1715,12 @@
     <script src="assets/js/jquery.bundle.js?ver=1930"></script>
     <script src="assets/js/scripts.js?ver=1930"></script>
     <script src="assets/js/charts.js"></script>
+    <!-- <script>
+        function sturbornFunc() {
+            $('#sturborn-banner').addClass('sturborn-back')
+            $('#sturborn-btn').addClass('sturborn-front')
+        }
+    </script> -->
 </body>
 
 </html>
